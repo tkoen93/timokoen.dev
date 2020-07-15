@@ -1,10 +1,36 @@
-<header>
-  <nav>
-    <a routerLink="">home</a>
-    <a routerLink="about">about</a>
-  </nav>
-</header>
+<nav class="navbar is-info" role="navigation">
+  <div class="navbar-menu">
+    <div class="navbar-start">
+      <div class="navbar-item">
+        <a class="navbar-link is-arrowless" routerLink="/about">
+          About
+        </a>
+      </div>
+    </div>
 
-<main [@fadeAnimation]="outlet.isActivated ? outlet.activatedRoute : ''">
+
+
+    <div class="navbar-brand">
+      <a class="navbar-link is-arrowless" routerLink="/">
+        Home
+      </a>
+    </div>
+
+
+
+
+
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <a class="navbar-link is-arrowless" routerLink="/projects">
+          Projects
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- <main [@slider]="outlet.isActivated ? outlet.activatedRoute : ''"> -->
+<main [@routeAnimations]="prepareRoute(outlet)">
   <router-outlet #outlet="outlet"></router-outlet>
 </main>
