@@ -6,6 +6,16 @@
 //     width: 100%;
 // }
 
+// Imports functions, variables, and mixins that are needed by other Bootstrap files
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+// Import Bootstrap Reboot
+@import "~bootstrap/scss/reboot";
+// Import Bootstrap Grid
+@import "~bootstrap/scss/grid";
+@import "~bootstrap/scss/utilities";
+
 main {
   text-align: center;
   position: relative;
