@@ -1,13 +1,9 @@
-.example-card {
+.portfolio-card {
     width: 80vw;
     margin: auto;
     height: calc(100vh - 150px);
     background-color: #252525;
     border-radius: 20px;
-}
-
-.example-header-image {
-    background-size: cover;
 }
 
 .mat-card:not([class*=mat-elevation-z]) {
@@ -21,6 +17,5 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
     background-image: url(https://lmpixels.com/wp/leven-wp/dark/wp-content/uploads/sites/4/2019/12/main_bg_14.png);
 }
