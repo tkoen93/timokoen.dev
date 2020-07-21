@@ -1,8 +1,9 @@
 .portfolio-card {
     width: 80vw;
     margin: auto;
-    height: calc(100vh - 150px);
-    background-color: #252525;
+    height: calc(100vh - 300px);
+    $color: #474B4F;
+    background-color: rgba($color, 0.8);
     border-radius: 20px;
 }
 
@@ -12,10 +13,20 @@
                 0 1px 3px 0 rgba(0,0,0,1);
 }
 
+.mat-card {
+    padding: 0 !important;
+}
+
 .main-div {
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(https://lmpixels.com/wp/leven-wp/dark/wp-content/uploads/sites/4/2019/12/main_bg_14.png);
+    // background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
+    background: radial-gradient(ellipse at bottom, #222629 0%, #090A0F 100%);
+    overflow: hidden;
+}
+
+mat-card-content, .row {
+    height: 100%;
 }
