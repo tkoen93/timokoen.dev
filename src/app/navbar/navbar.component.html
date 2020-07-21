@@ -1,20 +1,33 @@
-<div class="row">
-  <div class="col-3">
-    <p>Timo Koen</p>
-  </div>
-  <div class="col-6 ml-auto">
-    <p>
-      <a routerLink="/about">
-        About
-      </a>
-      - 
-      <a routerLink="/">
-        Home
-      </a>
-      - 
-      <a routerLink="/projects">
-        Projects
-      </a>
-    </p>
-  </div>
+<div class="menu-left">
+    <div class="navbar-brand">
+        <a class="logo-text" routerLink="/">
+            Timo
+        </a>
+    </div>
+    <ul class="nav">
+        <li>
+            <a class="nav-link {{ selectedRoute == 'Home' ? 'active' : '' }}" routerLink="/">
+                <fa-icon [icon]="faHouseDamage"></fa-icon><br />
+                <span>Home</span>
+            </a>
+        </li>
+        <li>
+            <a class="nav-link {{ selectedRoute == '/about' ? 'active' : '' }}" routerLink="/about">
+                <fa-icon [icon]="faAddressCard"></fa-icon><br />
+                <span>About Me</span>
+            </a>
+        </li>
+        <li>
+            <a class="nav-link {{ selectedRoute == '/projects' ? 'active' : '' }}" routerLink="/projects">
+                <fa-icon [icon]="faBriefcase"></fa-icon><br />
+                <span>Portfolio</span>
+            </a>
+        </li>
+        <li>
+            <a class="nav-link" href="#contactus">
+                <fa-icon [icon]="faIdCardAlt"></fa-icon><br />
+                <span>Contact</span>
+            </a>
+        </li>
+    </ul>
 </div>

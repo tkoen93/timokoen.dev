@@ -9,6 +9,7 @@ import { AboutComponent } from './about/about.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { MaterialModule } from './_material/material.module';
 import { NavbarComponent } from './navbar/navbar.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { NavbarComponent } from './navbar/navbar.component';
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    MaterialModule
+    MaterialModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
