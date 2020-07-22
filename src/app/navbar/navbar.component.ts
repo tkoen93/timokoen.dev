@@ -14,10 +14,10 @@ export class NavbarComponent implements OnInit {
   selectedRoute: string = "Home";
 
   navItems: NavBarModel[] = [
-    { icon: faHouseDamage, route: '/', name: 'Home'},
-    { icon: faAddressCard, route: '/about', name: 'About Me'},
-    { icon: faBriefcase, route: '/projects', name: 'Portfolio'},
-    { icon: faIdCardAlt, route: '/contact', name: 'Contact'}
+    { icon: faHouseDamage, route: '/', name: 'Home' },
+    { icon: faAddressCard, route: '/about', name: 'About Me' },
+    { icon: faBriefcase, route: '/projects', name: 'Portfolio' },
+    { icon: faIdCardAlt, route: '/contact', name: 'Contact' }
   ];
 
   constructor(private router: Router,

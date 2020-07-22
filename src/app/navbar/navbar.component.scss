@@ -1,8 +1,4 @@
-:host {
-    width: 70vw;
-    margin: auto;
-    margin-top: 20px;
-}
+@import "../../variables.scss";
 
 .menu-left {
     overflow: hidden;
@@ -31,10 +27,6 @@ a {
 
 .nav {
     list-style: none;
-}
-
-li {
-    display: list-item;
 }
 
 .nav li a {
