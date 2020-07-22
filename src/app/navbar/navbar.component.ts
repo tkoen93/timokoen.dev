@@ -11,11 +11,6 @@ import { NavBarModel } from '../_models/navbar.model';
 })
 export class NavbarComponent implements OnInit {
 
-  faHouseDamage = faHouseDamage;
-  faIdCardAlt = faIdCardAlt;
-  faAddressCard = faAddressCard;
-  faBriefcase = faBriefcase;
-
   selectedRoute: string = "Home";
 
   navItems: NavBarModel[] = [
