@@ -5,28 +5,10 @@
         </a>
     </div>
     <ul class="nav">
-        <li>
-            <a class="nav-link {{ selectedRoute == 'Home' ? 'active' : '' }}" routerLink="/">
-                <fa-icon [icon]="faHouseDamage"></fa-icon><br />
-                <span>Home</span>
-            </a>
-        </li>
-        <li>
-            <a class="nav-link {{ selectedRoute == '/about' ? 'active' : '' }}" routerLink="/about">
-                <fa-icon [icon]="faAddressCard"></fa-icon><br />
-                <span>About Me</span>
-            </a>
-        </li>
-        <li>
-            <a class="nav-link {{ selectedRoute == '/projects' ? 'active' : '' }}" routerLink="/projects">
-                <fa-icon [icon]="faBriefcase"></fa-icon><br />
-                <span>Portfolio</span>
-            </a>
-        </li>
-        <li>
-            <a class="nav-link {{ selectedRoute == '/contact' ? 'active' : '' }}" routerLink="/contact">
-                <fa-icon [icon]="faIdCardAlt"></fa-icon><br />
-                <span>Contact</span>
+        <li *ngFor="let navItem of navItems">
+            <a class="nav-link {{ selectedRoute == navItem.route ? 'active' : '' }}" routerLink="{{ navItem.route }}">
+                <fa-icon [icon]="navItem.icon"></fa-icon><br />
+                <span>{{ navItem.name }}</span>
             </a>
         </li>
     </ul>
