@@ -25,7 +25,6 @@ export class NavbarComponent implements OnInit {
                   } else {
                     this.selectedRoute = "Home";
                   }
-                  console.log(location.path());
                 });
               }
 

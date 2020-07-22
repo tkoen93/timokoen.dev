@@ -1,3 +1,5 @@
+@import "../variables.scss";
+
 .portfolio-card {
     width: 80vw;
     margin: auto;
@@ -5,6 +7,10 @@
     $color: #474B4F;
     background-color: rgba($color, 0.8);
     border-radius: 20px;
+
+    @media screen and (max-width: $device-phone) {
+        height: calc(100vh - 100px);
+    }
 }
 
 .mat-card:not([class*=mat-elevation-z]) {
