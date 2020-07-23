@@ -1,1 +1,15 @@
-<h1>Middle Page</h1> 
+<div class="row fullHeight">
+    <div class="col-12 desktopHeight">
+        <div class="card">
+            <img class="card-img-top" src="assets/img/profilecardbackground.JPG">
+            <div class="card-body text-center">
+                <img class="avatar rounded-circle" src="assets/img/timokoen.jpg">
+                <h4 class="card-title">Timo Koen</h4>
+                <h6 class="card-subtitle mb-2 text-muted">Software Engineer</h6>
+                    <div class="icon-block">
+                        <a *ngFor="let faIcon of faIcons" href="{{ faIcon.url }}" target="_blank"><fa-icon [icon]="faIcon.icon"></fa-icon></a> 
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,12 +1,36 @@
 /* You can add global styles to this file, and also import other style files */
+@import "./variables.scss";
+@import "./background.scss";
 
-// router-outlet ~ * {
-//     position: absolute;
-//     height: 100%;
-//     width: 100%;
-// }
+// Imports functions, variables, and mixins that are needed by other Bootstrap files
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+// Import Bootstrap Reboot
+@import "~bootstrap/scss/reboot";
+// Import Bootstrap Grid
+@import "~bootstrap/scss/grid";
+@import "~bootstrap/scss/utilities";
+// Import Bootstrap Card
+@import "~bootstrap/scss/card";
 
 main {
   text-align: center;
   position: relative;
+}
+
+h1 {
+  color: white;
+}
+
+p {
+  color: white;
+}
+
+// Hide div element on mobile devices
+.hideDiv {
+  opacity: 1;
+  @media screen and (max-width : $device-phone) {
+    opacity: 0;
+  }
 }

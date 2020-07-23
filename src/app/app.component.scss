@@ -1,0 +1,48 @@
+@import "../variables.scss";
+
+.portfolio-card {
+    width: 80vw;
+    margin: auto;
+    height: calc(100vh - 300px);
+    $color: #474B4F;
+    background-color: rgba($color, 0.8);
+    border-radius: 20px;
+
+    @media screen and (max-width: $device-tablet-1) {
+        height: calc(100vh - 100px);
+        margin-bottom: 25px;
+    }
+}
+
+.mat-card:not([class*=mat-elevation-z]) {
+    box-shadow: 0 2px 1px -1px rgba(0,0,0,1), 
+                0 1px 1px 0 rgba(0,0,0,1), 
+                0 1px 3px 0 rgba(0,0,0,1);
+}
+
+.mat-card {
+    padding: 0 !important;
+}
+
+.main-div {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(ellipse at bottom, #222629 0%, #090A0F 100%);
+    overflow: hidden;
+}
+
+mat-card-content, .row {
+    height: 100%;
+}
+
+.shiftLeft {
+    @media screen and (min-width: $device-tablet) {
+        margin-left: -15px;
+    }
+}
+
+.fullHeight {
+    height: 100%;
+}
