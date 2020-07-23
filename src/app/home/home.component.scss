@@ -62,3 +62,9 @@
         height: calc(100% - 30px);
     }
 }
+
+.desktopHeight {
+  @media screen and (min-width: $device-tablet) {
+    height: 65vh;;
+  }
+}
