@@ -6,7 +6,7 @@
     </div>
     <ul class="nav">
         <li *ngFor="let navItem of navItems">
-            <a class="nav-link {{ selectedRoute == navItem.route ? 'active' : '' }}" routerLink="{{ navItem.route }}">
+            <a class="nav-link{{ selectedRoute == navItem.route ? '-active' : '' }}" routerLink="{{ navItem.route }}">
                 <fa-icon [icon]="navItem.icon"></fa-icon><br />
                 <span>{{ navItem.name }}</span>
             </a>
@@ -23,14 +23,12 @@
     </div>
 </div>
 <div class="mobileNav">
-    <div class="row">
-        <div *ngFor="let navItem of navItems">
-            <div class="col">
-                <a class="nav-link {{ selectedRoute == navItem.route ? 'active' : '' }}" routerLink="{{ navItem.route }}">
-                    <fa-icon [icon]="navItem.icon"></fa-icon><br />
-                    <span>{{ navItem.name }}</span>
-                </a>
-            </div>
-        </div>
-    </div>
+    <ul class="row">
+        <li *ngFor="let navItem of navItems">
+            <a class="nav-link-mobile{{ selectedRoute == navItem.route ? '-active' : '' }}" routerLink="{{ navItem.route }}">
+                <fa-icon [icon]="navItem.icon"></fa-icon><br />
+                <span>{{ navItem.name }}</span>
+            </a>
+        </li>
+    </ul>
 </div>

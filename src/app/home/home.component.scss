@@ -1,7 +1,7 @@
 @import "../../variables.scss";
 
 .avatar {
-  border: 0.3rem solid rgba(#000, 0.3);
+  border: 0.3rem solid rgba(#86C232, 0.3);
   margin-top: -6rem;
   margin-bottom: 1rem;
   max-width: 9rem;
@@ -32,13 +32,13 @@
 
 .card fa-icon {
   display: inline-block;
-    font-size: 16px;
+    font-size: 30px;
     color: #222629;
     text-align: center;
     border: 1px solid #222629;
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
+    width: 44px;
+    height: 44px;
+    line-height: 44px;
     border-radius: 50%;
     margin:0 5px;
 }
@@ -67,4 +67,12 @@
   @media screen and (min-width: $device-tablet) {
     height: calc(100vh - 330px);
   }
+}
+
+h1 {
+  color: #86C232;
+}
+
+h4 {
+  color: #FFFFFF;
 }
