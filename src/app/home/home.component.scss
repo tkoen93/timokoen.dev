@@ -52,7 +52,7 @@
 }
 .card fa-icon:hover {
   background-color:#222629;
-  color:#fff;
+  color:#61892F;
   text-decoration:none;
 }
 
@@ -65,6 +65,6 @@
 
 .desktopHeight {
   @media screen and (min-width: $device-tablet) {
-    height: 65vh;;
+    height: calc(100vh - 330px);
   }
 }
