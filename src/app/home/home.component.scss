@@ -57,7 +57,7 @@
 }
 
 .fullHeight {
-  // height: 100%;
+  height: calc(100% - 0px);
     @media screen and (max-width: $device-tablet-1) {
         height: calc(100% - 30px);
     }
