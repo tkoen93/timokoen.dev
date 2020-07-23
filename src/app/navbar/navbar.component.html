@@ -1,4 +1,4 @@
-<div class="menu-left">
+<div *ngIf="navType == 'large'" class="menu-left">
     <div class="navbar-brand">
         <a class="logo-text" routerLink="/">
             Timo
@@ -12,4 +12,25 @@
             </a>
         </li>
     </ul>
+    <div *ngIf="showNavIcons" [@showHideFaIcons] class="navFooter">
+        <a href="https://github.com/tkoen93" target="_blank">
+            <fa-icon [icon]="faGithub"></fa-icon>
+        </a>
+        <div class="divider"></div>
+        <a href="https://www.linkedin.com/in/timokoen/" target="_blank">
+            <fa-icon [icon]="faLinkedin"></fa-icon>
+        </a>
+    </div>
+</div>
+<div class="mobileNav">
+    <div class="row">
+        <div *ngFor="let navItem of navItems">
+            <div class="col">
+                <a class="nav-link {{ selectedRoute == navItem.route ? 'active' : '' }}" routerLink="{{ navItem.route }}">
+                    <fa-icon [icon]="navItem.icon"></fa-icon><br />
+                    <span>{{ navItem.name }}</span>
+                </a>
+            </div>
+        </div>
+    </div>
 </div>

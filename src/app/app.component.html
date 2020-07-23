@@ -3,15 +3,13 @@
   <div id="stars2"></div>
   <div id="stars3"></div>
   <mat-card class="portfolio-card">
-    <mat-card-header>
-    </mat-card-header>
     <mat-card-content>
       <div class="row">
-        <div class="col-lg-2 d-none d-sm-block">
-          <app-navbar></app-navbar>
+        <div class="col-md-2 d-none d-md-block">
+          <app-navbar navType="large"></app-navbar>
         </div>
-        <div class="col-sm-12 col-lg-10">
-          <main [@routeAnimations]="prepareRoute(outlet)">
+        <div class="col-sm-12 col-md-10 shiftLeft">
+          <main [@routeAnimations]="prepareRoute(outlet)" class="fullHeight">
             <router-outlet #outlet="outlet"></router-outlet>
           </main>
         </div>
@@ -19,3 +17,4 @@
     </mat-card-content>
   </mat-card>
 </div>
+<app-navbar navType="small"></app-navbar>

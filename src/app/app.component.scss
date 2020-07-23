@@ -8,8 +8,9 @@
     background-color: rgba($color, 0.8);
     border-radius: 20px;
 
-    @media screen and (max-width: $device-phone) {
+    @media screen and (max-width: $device-tablet-1) {
         height: calc(100vh - 100px);
+        margin-bottom: 25px;
     }
 }
 
@@ -28,11 +29,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    // background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
     background: radial-gradient(ellipse at bottom, #222629 0%, #090A0F 100%);
     overflow: hidden;
 }
 
 mat-card-content, .row {
+    height: 100%;
+}
+
+.shiftLeft {
+    @media screen and (min-width: $device-tablet) {
+        margin-left: -15px;
+    }
+}
+
+.fullHeight {
     height: 100%;
 }
