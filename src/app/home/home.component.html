@@ -1,0 +1,15 @@
+<div class="row fullHeight">
+    <div class="col-12 desktopHeight">
+        <div class="card">
+            <img class="card-img-top" src="assets/img/profilecardbackground.JPG">
+            <div class="card-body text-center">
+                <img class="avatar rounded-circle" src="assets/img/timokoen.jpg">
+                <h1 class="card-title">Timo Koen</h1>
+                <h4 class="card-subtitle mb-2">Software Engineer</h4>
+                    <div class="icon-block">
+                        <a *ngFor="let faIcon of faIcons" href="{{ faIcon.url }}" target="_blank"><fa-icon [icon]="faIcon.icon"></fa-icon></a> 
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
