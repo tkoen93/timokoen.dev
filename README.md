@@ -1,3 +1,5 @@
+[![Build Status](https://github.com/tkoen93/timokoen.dev/workflows/Deploy%20to%20GitHub%20Pages/badge.svg)](https://github.com/tkoen93/timokoen.dev)
+
 # Timokoendev
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.11.
