@@ -10,7 +10,9 @@
 
     @media screen and (max-width: $device-tablet-1) {
         height: calc(100vh - 100px);
-        margin-top: 25px;
+        width: 90vw;
+        margin-left: 15px;
+        margin-top: 20px;
     }
 }
 

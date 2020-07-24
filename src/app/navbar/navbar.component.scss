@@ -83,23 +83,36 @@ a.logo-text:hover {
         bottom: 0;
         height: 60px;
         width: 100%;
-        background: #222629;
+        $color: #222629;
+        background: rgba($color, 0.8);
         text-align: center;
+        box-sizing: border-box;
     }
 }
 
-.mobileNav li a {
+.mobileNav li {
     font-size: 12px;
     font-weight: 500;
     display: block;
     position: relative;
-    border-bottom: 1px solid rgba(9, 10, 12, 0.29);
+    border: 1px solid rgba(9, 10, 12, 0.29);
     text-transform: uppercase;
     letter-spacing: 0.055rem;
-    width: 24vw;
+    width: 25%;
+    padding: 4px 0;
+}
+
+.mobileNav li.active {
+    border-top: 2px solid rgba(#86C232, 1);
 }
 
 .nav-link-mobile-active {
     color: #86C232;
-    border-bottom: 2px solid rgba(#86C232, 1);
+}
+
+.mobileNav ul {
+    padding-left: 0px;
+    margin: auto;
+    height: 100%;
+    width: 100%;
 }

@@ -24,7 +24,7 @@
 </div>
 <div class="mobileNav">
     <ul class="row">
-        <li *ngFor="let navItem of navItems">
+        <li *ngFor="let navItem of navItems" class="{{ selectedRoute == navItem.route ? 'active' : '' }}">
             <a class="nav-link-mobile{{ selectedRoute == navItem.route ? '-active' : '' }}" routerLink="{{ navItem.route }}">
                 <fa-icon [icon]="navItem.icon"></fa-icon><br />
                 <span>{{ navItem.name }}</span>
