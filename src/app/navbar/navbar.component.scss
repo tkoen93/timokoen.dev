@@ -69,12 +69,6 @@ a.logo-text:hover {
     bottom: 0;
 }
 
-.divider {
-    width: 5px;
-    height: auto;
-    display: inline-block;
-}
-
 .mobileNav {
     display: none;
     @media screen and (max-width: $device-tablet-1) {
@@ -115,4 +109,8 @@ a.logo-text:hover {
     margin: auto;
     height: 100%;
     width: 100%;
+}
+
+fa-icon {
+    margin: 0 3px;
 }
