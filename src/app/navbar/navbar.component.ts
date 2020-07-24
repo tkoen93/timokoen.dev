@@ -1,10 +1,10 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { faHouseDamage, faAddressCard, faBriefcase, faIdCardAlt } from '@fortawesome/free-solid-svg-icons';
-import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { Router } from '@angular/router';
 import { Location } from '@angular/common';
 import { NavBarModel } from '../_models/navbar.model';
 import { trigger, transition, style, animate } from '@angular/animations';
+import { faIcons } from '../_models/fa.model';
 
 @Component({
   selector: 'app-navbar',
@@ -39,8 +39,7 @@ export class NavbarComponent implements OnInit {
   @Input() navType: string;
 
   selectedRoute: string = "Home";
-  faGithub = faGithub;
-  faLinkedin = faLinkedin;
+  faIcons = faIcons;
   showNavIcons: boolean = false;
 
   navItems: NavBarModel[] = [
