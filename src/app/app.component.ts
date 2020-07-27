@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-// import { fadeAnimation } from './_animations/animations';
 import { RouterOutlet } from '@angular/router';
 import { slideInAnimation } from './_animations/route.animation';
 

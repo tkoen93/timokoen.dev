@@ -14,6 +14,14 @@
         // margin-left: 15px;
         margin-top: 20px;
     }
+
+    @media screen and (max-height: $device-height-medium) and (orientation:landscape) {
+        height: calc(100vh - 90px);
+    }
+
+    @media screen and (max-height: $device-height-small) and (orientation:landscape) {
+        height: 75vh;
+    }
 }
 
 .mat-card:not([class*=mat-elevation-z]) {
@@ -48,4 +56,10 @@ mat-card-content, .row {
 
 .fullHeight {
     height: 100%;
+}
+
+.showSideMenu {
+    @media screen and (min-width: $device-tablet), screen and (max-height: $device-height-small) and (orientation:landscape) {
+        display: none;
+    }
 }
